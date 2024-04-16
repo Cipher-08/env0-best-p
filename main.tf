@@ -4,8 +4,8 @@ provider "aws" {
   secret_key = var.aws_secret_key
 }
 
-resource "aws_s3_bucket" "my_s3_bucket" {
-  bucket = "my-s3-bucket-${timestamp()}"
+resource "aws_s3_bucket" "aws_s3_env0_bucket_test" {
+  bucket = "aws_s3_env0_bucket_test_4398438"
 }
 
 variable "aws_access_key" {
