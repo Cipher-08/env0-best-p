@@ -6,6 +6,10 @@ provider "aws" {
 
 resource "aws_s3_bucket" "aws-s3-env0-bucket-test-1" {
   bucket = "aws-env0-bucket-test-4398438-1"
+tags = {
+    Name        = "Nameofthebucket"
+    Environment = "Production"
+  }
 }
 
 variable "aws_access_key" {
