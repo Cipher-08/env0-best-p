@@ -23,7 +23,7 @@ module "modules" {
   version = "1.0.0"
 }
 
-module "module_reg" {
+module "modules_reg" {
   source = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/module_reg/org"
   version = "1.0.0"
 }
