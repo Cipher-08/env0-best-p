@@ -18,7 +18,12 @@ variable "aws_secret_key" {
   default = ""
 }
 
-module "modules_reg" {
+module "modules" {
   source = "./modules"
+  version = "1.0.0"
+}
+
+module "module_reg" {
+  source = "api.env0.com/{organization-id}/{module-name}/{module-provider}"
   version = "1.0.0"
 }
