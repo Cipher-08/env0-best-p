@@ -9,12 +9,12 @@ resource "aws_s3_bucket" "my_s3_bucket" {
   acl    = "private"
 }
 
-variable "access" {
+variable "aws_access_key" {
   type = string
   default = ""
 }
 
-variable "secret" {
+variable "aws_secret_key" {
   type = string
   default = ""
 }
