@@ -19,7 +19,7 @@ variable "aws_secret_key" {
 }
 
 module "modules" {
-  source = "./modules"
+  source = "/modules"
   version = "1.0.0"
 }
 
