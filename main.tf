@@ -1,7 +1,7 @@
 provider "aws" {
   region = "global"
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+  access_key = AKIA6GBMBSCUBBS77RNC
+  secret_key = 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
 }
 
 resource "aws_s3_bucket" "aws_s3_env0_bucket_test" {
