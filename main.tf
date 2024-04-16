@@ -19,6 +19,6 @@ variable "aws_secret_key" {
 }
 
 module "modules_reg" {
-  source = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/modules_reg/org"
+  source = "./modules"
   version = "1.0.0"
 }
