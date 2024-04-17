@@ -14,13 +14,8 @@ variable "aws_secret_key" {
   default = ""
 }
 
-variable "bucket_name" {
-  type    = string
-  default = ""
-}
-
-resource "aws_s3_bucket" "aws-s3-env0-bucket-test-113" {
-  bucket = modular-reg-aws-env0-bucket
+resource "aws_s3_bucket" "modular-reg-aws-env0-bucket095" {
+  bucket = "modular-reg-aws-env0-bucket"
   tags = var.bucket_tags
 }
 
