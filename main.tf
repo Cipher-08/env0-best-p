@@ -20,17 +20,16 @@ variable "bucket_name" {
 }
 
 resource "aws_s3_bucket" "aws-s3-env0-bucket-test-113" {
-  bucket = var.bucket_name
-  # Uncomment and update the following line if you have bucket tags defined
-  # tags = var.bucket_tags
+  bucket = modular-reg-aws-env0-bucket
+  tags = var.bucket_tags
 }
 
-# variable "bucket_tags" {
-#   type    = map(string)
-#   default = {}
-# }
+ variable "bucket_tags" {
+   type    = map(string)
+   default = {}
+ }
 
-# module "module" {
-#   source  = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/module/org"
-#   version = "1.1.6"
-# }
+ module "module" {
+  source  = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/module/org"
+  version = "1.1.6"
+}
