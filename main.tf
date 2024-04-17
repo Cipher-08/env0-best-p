@@ -14,19 +14,17 @@ variable "aws_access_key" {
   default = ""
 }
 
-variable "bucket_tags" {
-  type        = map(string)
-  default = {
+# variable "bucket_tags" {
+#   type        = map(string)
+#   default = {
   
-  }
-}
+#   }
+# }
 
-module "module" {
-  source = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/module/org"
-  version = "1.1.6"
-}
-
-
+# module "module" {
+#   source = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/module/org"
+#   version = "1.1.6"
+# }
 
 variable "aws_secret_key" {
   type = string
