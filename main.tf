@@ -4,8 +4,8 @@ provider "aws" {
   secret_key = var.aws_secret_key
 }
 
-resource "aws_s3_bucket" "aws-s3-env0-bucket-test-11" {
-  bucket = "aws-env0-bucket-test-4398438-11"
+resource "aws_s3_bucket" "aws-s3-env0-bucket-test-112" {
+  bucket = "aws-env0-bucket-test-4398438-112"
  # tags = var.bucket_tags
 }
 
