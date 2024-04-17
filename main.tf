@@ -14,17 +14,18 @@ variable "aws_secret_key" {
   default = ""
 }
 
-resource "aws_s3_bucket" "modular-reg-aws-env0-bucket095" {
-  bucket = "modular-reg-aws-env0-bucket"
-  tags = var.bucket_tags
-}
-
- variable "bucket_tags" {
-   type    = map(string)
-   default = {}
- }
-
- module "module" {
+module "module" {
   source  = "api.env0.com/81b8f9f3-6542-417b-a2b8-e8120df3a2a2/module/org"
   version = "1.1.6"
 }
+
+variable "bucket_name" {
+  type    = string
+  default = ""
+}
+
+resource "aws_s3_bucket" "modular-reg-aws-env0-bucket095" {
+  bucket = var.bucket_name
+}
+
+
