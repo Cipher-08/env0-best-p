@@ -16,7 +16,7 @@ variable "aws_secret_key" {
 
 variable "bucket_name" {
   type    = string
-  default = "aws-env0-bucket-test-4398438-113"
+  default = ""
 }
 
 resource "aws_s3_bucket" "aws-s3-env0-bucket-test-113" {
