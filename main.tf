@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "aws-s3-env0-bucket-test-11" {
-  bucket = "aws-env0-bucket-test-4398438-11224342"
+  bucket = "aws-env0-bucket-test-4398438-754574"
  # tags = var.bucket_tags
 }
 
