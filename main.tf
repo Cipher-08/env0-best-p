@@ -1,3 +1,10 @@
+terraform {
+  backend "s3" {
+    bucket = "aws-env0-bucket-test-4398438"
+    region = "us-east-1"
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
   access_key = var.aws_access_key
@@ -14,12 +21,7 @@ variable "aws_access_key" {
   default = ""
 }
 
-terraform {
-  backend "s3" {
-    bucket = "aws-env0-bucket-test-4398438"
-    region = "us-east-1"
-  }
-}
+
 
 # variable "bucket_tags" {
 #   type        = map(string)
